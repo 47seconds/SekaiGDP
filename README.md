@@ -9,13 +9,15 @@ For Windows:
 
 ```bash
   cd SekaiGDP
-  python.exe ./plotGDP.py
+  pip install -r requirements.txt
+  python.exe plotGDP.py
 ```
 
 For Linux/Unix:
 ```bash
   cd SekaiGDP
-  python3 ./plotGDP.py
+  pip install -r requirements.txt
+  python3 plotGDP.py
 ```
 
 Just provide the index of the country for which you would like to see the projected GDP, along with the number of years to be forecasted. A graph will then appear, which you can view in fullscreen mode for better clarity, projecting the forecasted GDP of deesired country.
