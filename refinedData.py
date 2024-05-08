@@ -28,14 +28,17 @@ def refine_data_into_float(data):
 def check_last_5_years(data, i):
     last_5_years = data.iloc[:, -5:].fillna(0)  # Fill NaN with 0
     row_data = last_5_years.iloc[i]
-    sum = 0
+    # sum = 0
     for j in range(-5,0):
-        sum = sum + float(row_data.iloc[j])
-    if sum == 0:
+        # sum = sum + float(row_data.iloc[j])
+        if row_data.iloc[j]==0:
+            return i
+    # if sum == 0:
         # print(f"Missing Data for: {i}: {data.iloc[i, 0]}")
-        return i
-    else:
-        return "OK"
+        # return i
+    # else:
+    #     return "OK"
+    return "OK"
 
 def main():
     data = pd.read_csv("./data/GDPdata1999_2022.csv")

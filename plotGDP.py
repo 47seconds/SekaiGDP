@@ -1,6 +1,6 @@
-''' 
+'''
       ## Build and maintained by:
-  
+
                                  .x+=:.                                                     ..          .x+=:.   
         xeee    dL ud8Nu  :8c   z`    ^%                                                  dF           z`    ^%  
        d888R    8Fd888888L %8      .   <k                             u.      u.    u.   '88bu.           .   <k 
@@ -13,7 +13,7 @@ d8eeeee88888eer    888888       @8Wou 9%  8888L      9888      u8888cJ888    888
        8888R      :888888     .888888P`   '8888c. .+ ?8888u../  "*888*P"    "*88*" 8888" .888N..888  .888888P`   
        8888R       888888     `   ^"F      "88888%    "8888P'     'Y"         ""   'Y"    `"888*""   `   ^"F     
     "*%%%%%%**~    '%**%                     "YP'       "P'                                  ""                  
-   
+
    '''
 
 import model
@@ -69,7 +69,7 @@ def plot_country_GDP_graph(selected_country_data, forecast_results, selected_cou
 
     # Show the plot
     plt.show()
-    
+
 def main():
     model_data = model.main()
     plot_country_GDP_graph(model_data[0], model_data[1], model_data[2])
